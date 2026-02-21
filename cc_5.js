@@ -1,15 +1,16 @@
-[cost employees 
-    {name: "Jim Halpert", hourlyrate:25, hoursworked:50}
-    {name: "Pam Beesly", hourlyrate: 28, hoursworked:55}
+const employees = [
+    {name: "Jim Halpert", hourlyrate:25, hoursworked:50},
+    {name: "Pam Beesly", hourlyrate: 28, hoursworked:55},
     {name: "Dwight Schrute", hourlyrate:30, hoursworked:60}
-]
+];
 function calculateBasePay(rate, hours) {
     const standardHours = 40;
     if (hours > standardHours) {
         const overtimeHours = hours - standardHours;
-    return rate * hours;
+    }
+    return rate * standardHours;
 }
-calculateOvertimePay(rate, hours) {
+function calculateOvertimePay(rate, hours) {
     const standardHours = 40;
     if (hours > standardHours) {
         const overtimeHours = hours - standardHours;
@@ -17,5 +18,11 @@ calculateOvertimePay(rate, hours) {
     }
     return 0;
 }
-calculateBasePay(25, 50);
-calculateOvertimePay(25, 50);   console.log(calculateBasePay(25, 50));
+console.log(calculateBasePay(25, 50));
+console.log(calculateOvertimePay(25, 50));
+
+function calculateTaxes(grossPay) { 
+    return grossPay * 0.15;
+}
+
+
