@@ -42,6 +42,7 @@ employees.forEach(employee => {
     const payrollResult = processPayroll(employee);
     console.log(payrollResult);
 });
+console.log(payrollResult);
 
 
 
