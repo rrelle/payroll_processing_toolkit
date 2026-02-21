@@ -1,7 +1,7 @@
 const employees = [
-    {name: "Jim Halpert", hourlyrate:25, hoursworked:50},
-    {name: "Pam Beesly", hourlyrate: 28, hoursworked:55},
-    {name: "Dwight Schrute", hourlyrate:30, hoursworked:60}
+    {name: "Jim Ferguson", hourlyrate:25, hoursworked:50},
+    {name: "Pam Idowu", hourlyrate: 28, hoursworked:55},
+    {name: "Dwight Francois", hourlyrate:30, hoursworked:60}
 ];
 function calculateBasePay(rate, hours) {
     const standardHours = 40;
@@ -39,10 +39,10 @@ function processPayroll(employee) {
     };
 }
 employees.forEach(employee => {
-    const payrollResult = processPayroll(employee);
-    console.log(payrollResult);
+    const payroll = processPayroll(employee);
+    console.log(payroll);
 });
-console.log(payrollResult);
+
 
 
 
