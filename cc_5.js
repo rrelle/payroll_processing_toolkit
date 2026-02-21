@@ -17,3 +17,5 @@ calculateOvertimePay(rate, hours) {
     }
     return 0;
 }
+calculateBasePay(25, 50);
+calculateOvertimePay(25, 50);   console.log(calculateBasePay(25, 50));
