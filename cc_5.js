@@ -38,6 +38,11 @@ function processPayroll(employee) {
         netPay: netPay
     };
 }
+employees.forEach(employee => {
+    const payrollResult = processPayroll(employee);
+    console.log(payrollResult);
+});
+
 
 
 
