@@ -1,6 +1,6 @@
 
 
-# 📌 Coding Challenge 05 – Payroll Processing Toolkit
+# Payroll Processing Toolkit
 
 ## Overview
 
